@@ -1,0 +1,16 @@
+{
+    "name": "ia-coding-game",
+    "version": "0.0.1",
+    "main": "index.js",
+    "bin": {
+        "ia": "./bin/iacg.js"
+    },
+    "scripts": {
+        "create": "DEBUG=* node index.js CREATE",
+        "join": "DEBUG=* node index.js JOIN"
+    },
+    "dependencies": {
+        "debug": "^2.6.3",
+        "request": "^2.81.0"
+    }
+}
