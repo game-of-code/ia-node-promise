@@ -33,7 +33,7 @@ class IA {
             }
             this.gameName = process.argv[3];
 
-            this.gameVersusPlayer = (process.argv.length >= 7) ? process.argv[6] : false;
+            this.gameVersusPlayer = (process.argv.length >= 7 && process.argv[6].toLowerCase() === 'true');
 
         }
 
