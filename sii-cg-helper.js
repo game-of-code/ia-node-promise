@@ -188,7 +188,7 @@ class SIICgHelper {
 
             setTimeout(() => {
                 resolve(data);
-            }, data.countDown + 10);
+            }, data.countDown);
 
             return true;
         }
