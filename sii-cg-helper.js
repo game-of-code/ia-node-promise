@@ -21,6 +21,14 @@ class CHARACTERS {
      * Get sorcerer key
      */
     static get SORCERER() { return 'SORCERER'; }
+    /**
+     * Get troll key
+     */
+    static get TROLL() { return 'TROLL'; }
+    /**
+     * Get elf key
+     */
+    static get ELF() { return 'ELF'; }
 }
 
 class ACTIONS {

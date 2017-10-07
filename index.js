@@ -1,7 +1,7 @@
 const cgHelper = require('./sii-cg-helper').SIICgHelper,
     CHARACTERS = require('./sii-cg-helper').CHARACTERS,
-    ACTIONS = require('./sii-cg-helper').ACTIONS
-GAME_STATUS = require('./sii-cg-helper').GAME_STATUS,
+    ACTIONS = require('./sii-cg-helper').ACTIONS,
+    GAME_STATUS = require('./sii-cg-helper').GAME_STATUS,
     debug = require('debug')('http');
 
 class IA {
@@ -51,8 +51,8 @@ class IA {
             process.exit();
         }
 
-        if ([CHARACTERS.DRUID, CHARACTERS.PALADIN, CHARACTERS.WARRIOR, CHARACTERS.SORCERER].indexOf(process.argv[4]) === -1) {
-            debug('Character need to be DRUID, PALADIN, WARRIOR or SORCERER');
+        if ([CHARACTERS.DRUID, CHARACTERS.PALADIN, CHARACTERS.WARRIOR, CHARACTERS.SORCERER, CHARACTERS.TROLL, CHARACTERS.ELF].indexOf(process.argv[4]) === -1) {
+            debug('Character need to be DRUID, PALADIN, WARRIOR, TROLL, ELF or SORCERER');
             process.exit();
         }
 
