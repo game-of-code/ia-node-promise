@@ -9,6 +9,10 @@ npm run create [GAME_NAME] [CHARACTER] [PLAYER_NAME] [VERSUS_PLAYER]
 * PLAYER_NAME: Your name
 * VERSUS_PLAYER: If true, an other player can join your game else it's an IA
 
+## If behind a proxy, prepend the command with :
+
+http_proxy="YOURPROXY" https_proxy="YOURPROXY" npm run ...
+
 # JOIN A GAME
 
 ```
