@@ -6,8 +6,8 @@ npm run create [GAME_NAME] [CHARACTER] [PLAYER_NAME] [VERSUS_PLAYER]
 // sample
 npm run create Battle PALADIN "Iron Man" true
 
-
 ```
+
 * GAME_NAME: Name of the new game
 * CHARACTER: Type of character (WARRIOR, PALADIN, DRUID, SORCERER, ELF, TROLL)
 * PLAYER_NAME: Your name
@@ -24,12 +24,14 @@ npm run join [GAME_TOKEN] [CHARACTER] [PLAYER_NAME]
 
 // sample
 npm run join 5w62jm ELF "Iron man"
-
 ```
 * GAME_TOKEN: Key of the game you want to join
 * CHARACTER: Type of character (WARRIOR, PALADIN, DRUID, SORCERER, ELF, TROLL)
 * PLAYER_NAME: Your name
 
+# Change API Endpoint
+
+Edit the `sii-cg-helpers.js` file, `baseApiUrl` const.
 
 # on Windows
 If starter kit run on window, ```Debug``` needs to be positionned in environmement variable. 

@@ -89,23 +89,31 @@ class IA {
     }
 
     startPlaying() {
-        /*
-            MAKE YOUR IA HERE
+        /**
+         * MAKE THE BEGINNING OF YOUR IA HERE
+         * It calls the function makeAction, which recursively calls herself after
          */
 
         this.makeAction();
     }
 
     makeAction() {
-        /*
-            MAKE YOUR IA HERE
-
-            EXEMPLE: This Code use the HIT attack only and catch http error from the server
-         */
         cgHelper.makeActionWithCoolDown(this.gameToken, this.playerKey, ACTIONS.HIT)
-            .then(() => this.makeAction())
+            .then((data) => {
+                /**
+                 * MAKE YOUR IA HERE
+                 * EXEMPLE: This code use the HIT attack only and catch http error from the server
+                 * data contains the response from the server
+                 */
+                this.makeAction();
+            })
             .catch((error) => {
                 if (error.statusCode) {
+                    /**
+                     * 429 : too many calls
+                     * 423 : too fast before game starts
+                     * 410 : game ended
+                     */
                     switch (error.statusCode) {
                         case 423: {
                             debug('Too fast');
