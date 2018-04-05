@@ -1,8 +1,8 @@
 const request = require('request'),
     debug = require('debug')('http');
 
-const baseApiUrl = 'https://coding-game.swat-sii.fr/api';
-//const baseApiUrl = 'http://localhost:8080';
+ const baseApiUrl = 'https://coding-game.swat-sii.fr/api';
+// const baseApiUrl = 'http://192.168.0.2/api';
 
 class CHARACTERS {
     /**
