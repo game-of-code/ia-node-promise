@@ -7,7 +7,9 @@
     },
     "scripts": {
         "create": "DEBUG=* node index.js CREATE",
-        "join": "DEBUG=* node index.js JOIN"
+        "join": "DEBUG=* node index.js JOIN",
+        "create-win": "set DEBUG=* & node index.js CREATE",
+        "join-win": "set DEBUG=* & node index.js JOIN"
     },
     "dependencies": {
         "debug": "^2.6.3",
