@@ -290,7 +290,7 @@ class SIICgHelper {
                     let action = this.me.character.actions.find(action => action.name === actionName);
                     return this.wait(action.coolDown * this.speed, data);
                 })
-                .then(resolve)
+                .then(data => resolve(data[0]))
                 .catch(reject);
 
         });
